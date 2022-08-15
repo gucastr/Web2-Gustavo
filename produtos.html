@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>WEB2 - Produtos</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/produtos.css">
+		
+	</head>
+	<body>
+		<body>
+			<section class="orcamento2">
+				<div class="container">
+					<h2 class="subtitulo">Tela de Cadastro</h2>
+					<div class="orcamento_dados grid-8">
+						<img src="img/LOGO.jpg" alt="">
+				</div>
+					<form id="form_orcamento" method="POST" action="./enviar.php" class="form grid-8 formphp">
+						<label for="codigo">Código</label>
+						<input type="text" id="CODIGO" name="CODIGO" required>
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" name="nome" required>
+						<label for="categoria">Categoria</label>
+						<div class="div-select">
+						<select name="select" id="select" required>
+							<option value="categoria">Selecione uma categoria</option>
+							<option value="camisa">Camisa</option>
+							<option value="tenis">Tênis</option>
+							<option value="bermuda">Bermuda</option>
+							<option value="meia">Meia</option>
+						</select>
+						<label for="Preço">Preço</label>
+						<input type="number" id="Preço" name="Preço" required>
+						<label for="Quantidade">Quantidade</label>
+						<input type="number" id="Quantidade" name="Quantidade" required>
+						</div>
+
+						<button id="enviar" name="enviar" type="submit" class="btn">OK</button>
+						<button id="resetar" name="enviar" type="reset" class="btn">Apagar</button>
+						<a class="cancelar" href="pesquisa.html">Cancelar</a>
+					</form>
+				</div>
+			</section>
+	</body>
+</html>
